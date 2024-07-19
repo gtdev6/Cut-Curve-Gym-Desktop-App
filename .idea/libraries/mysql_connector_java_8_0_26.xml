@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="mysql-connector-java-8.0.26">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../Programs/Libraries" />
+      <root url="jar://$PROJECT_DIR$/../../Programs/Libraries/commons-collections4-4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Programs/Libraries/jcalendar-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Programs/Libraries/mysql-connector-java-8.0.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Programs/Libraries/poi-3.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Programs/Libraries/poi-ooxml-3.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Programs/Libraries/poi-ooxml-schemas-3.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Programs/Libraries/sqlite-jdbc-3.7.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Programs/Libraries/xmlbeans-2.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../Programs/Libraries" recursive="false" />
+  </library>
+</component>

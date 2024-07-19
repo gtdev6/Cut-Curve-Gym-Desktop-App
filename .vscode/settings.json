@@ -1,0 +1,21 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "d:\\Programs\\javafx-sdk-16\\lib\\javafx.base.jar",
+        "d:\\Programs\\javafx-sdk-16\\lib\\javafx.controls.jar",
+        "d:\\Programs\\javafx-sdk-16\\lib\\javafx.fxml.jar",
+        "d:\\Programs\\javafx-sdk-16\\lib\\javafx.graphics.jar",
+        "d:\\Programs\\javafx-sdk-16\\lib\\javafx.media.jar",
+        "d:\\Programs\\javafx-sdk-16\\lib\\javafx.swing.jar",
+        "d:\\Programs\\javafx-sdk-16\\lib\\javafx.web.jar",
+        "d:\\Programs\\javafx-sdk-16\\lib\\javafx-swt.jar",
+        "d:\\Programs\\Libraries\\commons-collections4-4.1.jar",
+        "d:\\Programs\\Libraries\\jcalendar-1.4.jar",
+        "d:\\Programs\\Libraries\\mysql-connector-java-8.0.26.jar",
+        "d:\\Programs\\Libraries\\poi-3.17.jar",
+        "d:\\Programs\\Libraries\\poi-ooxml-3.17.jar",
+        "d:\\Programs\\Libraries\\poi-ooxml-schemas-3.17.jar",
+        "d:\\Programs\\Libraries\\sqlite-jdbc-3.7.2.jar",
+        "d:\\Programs\\Libraries\\xmlbeans-2.6.0.jar"
+    ]
+}

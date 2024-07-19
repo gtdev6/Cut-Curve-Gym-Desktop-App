@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="355.0" prefWidth="1162.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller">
+   <children>
+      <Label alignment="CENTER" layoutX="5.0" layoutY="-11.0" prefHeight="60.0" prefWidth="1200.0" text="MP3 Player">
+         <font>
+            <Font name="Colonna MT" size="79.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.2571428571428571" startX="0.8380952380952381">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.2935393452644348" green="0.8899999856948853" blue="0.14239999651908875" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9961685823754789">
+                     <color>
+                        <Color red="0.9300000071525574" green="0.5765663981437683" blue="0.120899997651577" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.929411768913269" green="0.5764706134796143" blue="0.12156862765550613" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Slider fx:id="lengthslider" layoutX="74.0" layoutY="249.0" prefHeight="14.0" prefWidth="1008.0" />
+      <Button fx:id="play" disable="true" layoutX="42.0" layoutY="296.0" mnemonicParsing="false" onAction="#play" prefHeight="27.0" prefWidth="32.0">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="pause" disable="true" layoutX="108.0" layoutY="296.0" mnemonicParsing="false" onAction="#pauseMedia" prefHeight="27.0" prefWidth="32.0" />
+      <Button fx:id="forward" disable="true" layoutX="327.0" layoutY="296.0" mnemonicParsing="false" onAction="#forwardMedia" prefHeight="27.0" prefWidth="32.0" />
+      <Button fx:id="backward" disable="true" layoutX="247.0" layoutY="296.0" mnemonicParsing="false" onAction="#backwardMedia" prefHeight="27.0" prefWidth="32.0" />
+      <Button fx:id="next" disable="true" layoutX="467.0" layoutY="296.0" mnemonicParsing="false" onAction="#nextMedia" prefHeight="27.0" prefWidth="32.0" />
+      <Button fx:id="previous" disable="true" layoutX="403.0" layoutY="296.0" mnemonicParsing="false" onAction="#previousMedia" prefHeight="27.0" prefWidth="32.0" />
+      <Button fx:id="loop" layoutX="544.0" layoutY="296.0" mnemonicParsing="false" onAction="#loopcurrentmedia" prefHeight="27.0" prefWidth="61.0" text="Loop">
+         <font>
+            <Font name="Cooper Black" size="12.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.31018519401550293" green="0.41365739703178406" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.07450980693101883" green="0.7607843279838562" blue="0.9333333373069763" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Slider fx:id="volumeslider" layoutX="884.0" layoutY="304.0" max="1.0" prefHeight="14.0" prefWidth="231.0" value="0.5" />
+      <Label layoutX="802.0" layoutY="301.0" prefHeight="17.0" prefWidth="82.0" text="Volume :" textFill="WHITE">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="volume" layoutX="1120.0" layoutY="294.0" prefHeight="32.0" prefWidth="54.0" text="0%" textFill="WHITE">
+         <font>
+            <Font name="Cooper Black" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="currenttime" layoutX="30.0" layoutY="247.0" text="0.00" textFill="#fffdfd">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="totallength" layoutX="1093.0" layoutY="244.0" prefHeight="25.0" prefWidth="54.0" text="0.00" textFill="#fcf8f8">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="songname" layoutX="18.0" layoutY="115.0" prefHeight="113.0" prefWidth="1178.0">
+         <font>
+            <Font name="Gabriola" size="46.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.2571428571428571">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.2935393452644348" green="0.8899999856948853" blue="0.14239999651908875" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9961685823754789">
+                     <color>
+                        <Color red="0.9300000071525574" green="0.5765663981437683" blue="0.120899997651577" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9300000071525574" green="0.5765663981437683" blue="0.120899997651577" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="loopall" disable="true" layoutX="618.0" layoutY="296.0" mnemonicParsing="false" onAction="#loopAllMedia" prefHeight="27.0" prefWidth="68.0" text="!Loop">
+         <font>
+            <Font name="Cooper Black" size="12.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.31018519401550293" green="0.41365739703178406" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.07450980693101883" green="0.7607843279838562" blue="0.9333333373069763" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Button fx:id="open" layoutX="708.0" layoutY="296.0" mnemonicParsing="false" onAction="#openmedia" prefHeight="27.0" prefWidth="62.0" text="Open">
+         <font>
+            <Font name="Cooper Black" size="14.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.31018519401550293" green="0.41365739703178406" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.07450980693101883" green="0.7607843279838562" blue="0.9333333373069763" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Button fx:id="stop" disable="true" layoutX="178.0" layoutY="296.0" mnemonicParsing="false" onAction="#stopmedia" prefHeight="27.0" prefWidth="32.0" />
+      <Line endX="410.0" layoutX="432.0" layoutY="84.0" startX="-100.0" stroke="#d8ee14" />
+   </children>
+</AnchorPane>
